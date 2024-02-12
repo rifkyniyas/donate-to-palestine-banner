@@ -3,6 +3,15 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/dtp-banner.umd.cjs",
+  "module": "./dist/dtp-banner.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dtp-banner.js",
+      "require": "./dist/dtp-banner.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite && npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "build": "vite build",
