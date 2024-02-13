@@ -1,7 +1,7 @@
 {
   "name": "dtp-banner",
-  "private": true,
   "version": "0.0.1",
+  "description": "Display a banner over your website for users to find sources to donate to gaza",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/dtp-banner.umd.cjs",
@@ -12,6 +12,8 @@
       "require": "./dist/dtp-banner.umd.cjs"
     }
   },
+  "keywords" : ["donate to palestine banner" , "dtp-banner", "palestine", "gaza", "donate to palestine"],
+  "license" : "MIT",
   "scripts": {
     "dev": "vite && npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "build": "vite build",
