@@ -1,4 +1,4 @@
-import "./input.css";
+import css from "./output.css?raw";
 
 const link = "#";
 const bannerHTML = `
@@ -30,6 +30,11 @@ bg-gray-50 border border-b border-gray-200 sm:items-center lg:py-4"
 
 const initDTPBanner = () => {
   document.body.classList.add("pb-20");
+
+  const style = document.createElement("style");
+  style.innerHTML = css;
+  document.head.appendChild(style);
+
   const parser = new DOMParser();
   const doc = parser.parseFromString(bannerHTML, "text/html");
   const node = doc.body.firstChild;

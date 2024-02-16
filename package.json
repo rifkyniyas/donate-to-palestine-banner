@@ -16,7 +16,7 @@
   "license" : "MIT",
   "scripts": {
     "dev": "vite && npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "build": "vite build",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
