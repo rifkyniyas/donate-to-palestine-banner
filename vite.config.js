@@ -8,5 +8,6 @@ export default defineConfig({
       name: "dtp-banner",
       fileName: "dtp-banner",
     },
+    minify: true,
   },
 });
