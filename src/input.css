@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 @layer base {
-  #banner {
+  #dtp-banner {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;

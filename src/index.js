@@ -3,7 +3,7 @@ import css from "./output.css?raw";
 const link = "#";
 const bannerHTML = `
 <aside
-id="banner"
+id="dtp-banner"
 tabindex="-1"
 class="flex flex-col md:flex-row fixed bottom-0 z-50 gap-8 justify-between items-start py-4 px-6 w-full 
 bg-gray-50 border border-b border-gray-200 sm:items-center lg:py-4"

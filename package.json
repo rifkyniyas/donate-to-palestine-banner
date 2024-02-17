@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Display a banner over your website for users to find sources to donate to gaza",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/dtp-banner.umd.cjs",
   "module": "./dist/dtp-banner.js",
   "exports": {
@@ -12,15 +14,22 @@
       "require": "./dist/dtp-banner.umd.cjs"
     }
   },
-  "keywords" : ["donate to palestine banner" , "dtp-banner", "palestine", "gaza", "donate to palestine"],
-  "license" : "MIT",
+  "keywords": [
+    "donate to palestine banner",
+    "dtp-banner",
+    "palestine",
+    "gaza",
+    "donate to palestine"
+  ],
+  "license": "MIT",
   "scripts": {
-    "dev": "vite && npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "concurrently \"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch\" \"vite\"",
     "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
+    "concurrently": "^8.2.2",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "tailwindcss-scoped-preflight": "^2.1.0",

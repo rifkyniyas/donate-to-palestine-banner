@@ -8,7 +8,7 @@ export default {
   },
   plugins: [
     scopedPreflightStyles({
-      cssSelector: "#banner",
+      cssSelector: "#dtp-banner",
       mode: "matched only",
     }),
   ],
