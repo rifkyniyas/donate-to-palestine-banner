@@ -1,6 +1,6 @@
 {
   "name": "dtp-banner",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Display a banner over your website for users to find sources to donate to gaza",
   "type": "module",
   "files": [
